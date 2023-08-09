@@ -1,0 +1,22 @@
+
+LSTM for Text Classification cell state
+
+Why LSTM?
+Tradition neural networks suffer from short-term memory. Also, a big drawback is the vanishing gradient problem. 
+( While backpropagation the gradient becomes so small that it tends to 0 and such a neuron is of no use in further processing.)
+ LSTMs efficiently improves performance by memorizing the relevant information that is important and finds the pattern.
+
+LSTM for Text Classification
+There are many classic classification algorithms like Decision trees, RFR, SVM, that can fairly do a good job, then why to use LSTM for classification?
+
+One good reason to use LSTM is that it is effective in memorizing important information.
+
+If we look and other non-neural network classification techniques they are trained on multiple word as separate inputs that are just word 
+having no actual meaning as a sentence, and while predicting the class it will give the output according to statistics and not according to meaning. 
+That means, every single word is classified into one of the categories.
+
+This is not the same in LSTM. 
+In LSTM we can use a multiple word string to find out the class to which it belongs.
+ This is very helpful while working with Natural language processing. 
+If we use appropriate layers of embedding and encoding in LSTM, 
+the model will be able to find out the actual meaning in input string and will give the most accurate output class.
